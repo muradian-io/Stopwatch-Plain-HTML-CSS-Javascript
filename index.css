@@ -1,0 +1,121 @@
+html {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(250, 250, 250));
+    margin: 0;
+    padding: 0;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    transition-duration: 0.001s;
+}
+
+.logo {
+    display: flex;
+    /* color: greenyellow; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 2vw;
+    border-width: 0 0.5rem 0.5rem 0;
+    border-bottom-right-radius: 2rem;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 10px 10px 8px #4e4e4e;
+}
+
+.red {
+    background-color: red;
+    color: whitesmoke;
+    border-bottom-right-radius: 1.5rem;
+    padding-left: 0.2rem;
+    padding-right: 1rem;
+}
+
+.white {
+    background-color: whitesmoke;
+    color: red;
+    border-top-left-radius: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+}
+
+.StopWatch {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5% 10% 5% 10%;
+    font-size: 5vw;
+    background: linear-gradient(to right, rgb(146, 146, 146), rgb(3, 3, 3));
+    border-width: 0.3rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 1.5rem;
+    border-color: red;
+    border-radius: 2rem;
+    border-style: solid;
+}
+
+.counter {
+    color: whitesmoke;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-list>li {
+    display: inline;
+    align-self: center;
+
+}
+
+.btn {
+    background-color: rgb(253, 0, 0);
+    color: whitesmoke;
+    align-items: center;
+    padding: 0;
+    font-size: 2vw;
+    font-style: oblique;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 2rem;
+    border: none;
+    transition-duration: 0.4s;
+    margin-bottom: 1vw;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: rgb(245, 0, 0);
+}
+
+@media (orientation: portrait) {
+
+    .btn-list>li {
+        display: grid;
+        margin:2vw;
+    }
+
+    .btn {
+        font-size: 7vw;
+        width: 30vw;
+        height: 15vw;
+    }
+
+    .StopWatch {
+        font-size: 8vw;
+    }
+
+
+}
