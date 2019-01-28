@@ -20,9 +20,11 @@ class Stopwatch {
     }
 
     stop() {
+        if (this.running === true) {
         this.running = false;
         this.time = null;
         this.startpause.innerText = "Resume";
+        }
     }
 
     restart() {
