@@ -10,17 +10,14 @@ html {
 .container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     transition-duration: 0.001s;
 }
 
 .logo {
     display: flex;
-    /* color: greenyellow; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 2vw;
     border-width: 0 0.5rem 0.5rem 0;
     border-bottom-right-radius: 2rem;
@@ -48,8 +45,7 @@ html {
 .StopWatch {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+    align-items: center !important;
     margin: 5% 10% 5% 10%;
     font-size: 5vw;
     background: linear-gradient(to right, rgb(146, 146, 146), rgb(3, 3, 3));
@@ -63,7 +59,6 @@ html {
 
 .counter {
     color: whitesmoke;
-    position: relative;
     padding: 0;
     margin: 0;
 }
@@ -73,6 +68,7 @@ html {
     padding: 0;
     margin: 0;
 }
+
 
 .btn-list>li {
     display: inline;
@@ -91,11 +87,34 @@ html {
     height: 3vw;
     border-radius: 2rem;
     border: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     margin-bottom: 1vw;
 }
 
-.btn:hover {
+.btn-add {
+    background-color: rgb(253, 0, 0);
+    color: whitesmoke;
+    align-items: center;
+    padding: 0 1vw;
+    font-size: 2vw;
+    font-style: oblique;
+    width: auto;
+    height: 3vw;
+    border-radius: 2rem;
+    border: none;
+    transition-duration: 0.4s;
+    margin-bottom: 1vw;
+    align-self: center
+}
+
+#div-2,
+#div-3 {
+    display: none;
+}
+
+
+.btn:hover,
+.btn-add:hover {
     background-color: whitesmoke;
     color: rgb(245, 0, 0);
 }
@@ -104,18 +123,17 @@ html {
 
     .btn-list>li {
         display: grid;
-        margin:2vw;
+        margin: 2vw;
     }
 
-    .btn {
-        font-size: 7vw;
+    .btn,
+    .btn-add {
+        font-size: 4vw;
         width: 30vw;
-        height: 15vw;
+        height: 10vw;
     }
 
     .StopWatch {
         font-size: 8vw;
     }
-
-
 }
